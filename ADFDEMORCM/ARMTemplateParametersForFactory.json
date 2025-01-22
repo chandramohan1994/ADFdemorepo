@@ -1,0 +1,54 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "ADFDEMORCM"
+		},
+		"SqlServerlinkedservice_password": {
+			"value": ""
+		},
+		"linkedserivce_storagedemochand_connectionString": {
+			"value": ""
+		},
+		"linkedservice_Sql_password": {
+			"value": ""
+		},
+		"SqlServer1_properties_typeProperties_server": {
+			"value": "@{linkedService().serverName}"
+		},
+		"SqlServer1_properties_typeProperties_database": {
+			"value": "@{linkedService().dbName}"
+		},
+		"SqlServer1_properties_typeProperties_userName": {
+			"value": "@{linkedService().userName}"
+		},
+		"SqlServerlinkedservice_properties_typeProperties_server": {
+			"value": "adcdcompany.database.windows.net"
+		},
+		"SqlServerlinkedservice_properties_typeProperties_database": {
+			"value": "abcddevdb"
+		},
+		"SqlServerlinkedservice_properties_typeProperties_userName": {
+			"value": "chandramohan"
+		},
+		"linkedservice_Sql_properties_typeProperties_server": {
+			"value": "mydbserver.windows.db.net"
+		},
+		"linkedservice_Sql_properties_typeProperties_database": {
+			"value": "@{linkedService().DBname}"
+		},
+		"linkedservice_Sql_properties_typeProperties_userName": {
+			"value": "chandra"
+		},
+		"EventTrigger_properties_pipeline1_parameters_SourcePath": {
+			"value": "@triggerBody().filePath"
+		},
+		"EventTrigger_properties_pipeline1_parameters_SourceFile": {
+			"value": "@triggerBody().fileName"
+		},
+		"EventTrigger_properties_typeProperties_scope": {
+			"value": "/subscriptions/ec743a9f-9db9-4fdb-be8d-e4f5d119547a/resourceGroups/datafactory-course-rg/providers/Microsoft.Storage/storageAccounts/storagedemochand"
+		}
+	}
+}
