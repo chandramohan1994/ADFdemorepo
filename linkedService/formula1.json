@@ -7,14 +7,7 @@
 			"domain": "https://adb-509520258698631.11.azuredatabricks.net",
 			"authentication": "MSI",
 			"workspaceResourceId": "/subscriptions/ec743a9f-9db9-4fdb-be8d-e4f5d119547a/resourceGroups/datafactory-course-rg/providers/Microsoft.Databricks/workspaces/datafactorycourse-ws",
-			"newClusterNodeType": "Standard_DS3_v2",
-			"newClusterNumOfWorker": "1",
-			"newClusterSparkEnvVars": {
-				"PYSPARK_PYTHON": "/databricks/python3/bin/python3"
-			},
-			"newClusterVersion": "16.1.x-scala2.12",
-			"clusterOption": "Fixed",
-			"newClusterInitScripts": []
+			"existingClusterId": "0112-001916-gqhtc1r5"
 		}
 	}
 }
