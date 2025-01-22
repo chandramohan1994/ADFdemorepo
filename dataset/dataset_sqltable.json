@@ -1,0 +1,34 @@
+{
+	"name": "dataset_sqltable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "linkedservice_Sql",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"DBname": {
+					"value": "@dataset().dbNameFromDataSet",
+					"type": "Expression"
+				}
+			}
+		},
+		"parameters": {
+			"tableName": {
+				"type": "string"
+			},
+			"dbNameFromDataSet": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": {
+				"value": "@dataset().tableName",
+				"type": "Expression"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

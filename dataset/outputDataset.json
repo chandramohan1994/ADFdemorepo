@@ -1,0 +1,25 @@
+{
+	"name": "outputDataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "linkedserivce_storagedemochand",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "circuits01.csv",
+				"folderPath": "output",
+				"container": "adfdemo"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

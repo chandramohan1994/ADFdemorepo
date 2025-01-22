@@ -1,0 +1,9 @@
+{
+	"name": "ADFDEMORCM",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "df2c202f-d02a-4243-a728-a2c85b780e83",
+		"tenantId": "e3ac877a-8939-4447-b985-6a4de4344947"
+	}
+}

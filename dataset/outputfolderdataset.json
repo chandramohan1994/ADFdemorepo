@@ -1,0 +1,19 @@
+{
+	"name": "outputfolderdataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "linkedserivce_storagedemochand",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "output",
+				"container": "adfdemo"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

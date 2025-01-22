@@ -1,0 +1,26 @@
+{
+	"name": "Demeoscheduletrigger",
+	"properties": {
+		"description": "Daily trigger",
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pipeline1",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 15,
+				"startTime": "2025-01-15T10:35:00",
+				"endTime": "2025-01-18T18:35:00",
+				"timeZone": "Eastern Standard Time"
+			}
+		}
+	}
+}
